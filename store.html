@@ -2,110 +2,115 @@
 <head>
     <title>INTERNATIONAL BASKETBALL CAMP TEAM97 | Store</title>
     <meta name="description" content="This is the description">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href=index.html>HOME</a></li>
                 <li><a href=store.html>STORE</a></li>
                 <li><a href=about.html>ABOUT</a></li>
             </ul>
         </nav>
-        <hr>
+        <h1 class="team-name team-name-large">TEAM97</h1>
     </header>
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            <div>
-                <strong>CAPS</strong>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">CAPS</span>
+                <img class="shop-item-image" src="images/cap.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">&euro;9.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/cap.png">
-            <div>
-                <span>&euro;9.99</span>
-                <button role="button">ADD TO CART</button>
+
+            <div class="shop-item">
+                <span class="shop-item-title">SOCKS</span>
+                <img class="shop-item-image" src="images/sock.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">&euro;4.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <strong>SOCKS</strong>
+
+            <div class="shop-item">
+                <span class="shop-item-title">T-SHIRTS</span>
+                <img class="shop-item-image" src="images/tshirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">&euro;11.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/sock.png">
-            <div>
-                <span>&euro;4.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>T-SHIRTS</strong>
-            </div>
-            <img src="images/tshirt.png">
-            <div>
-                <span>&euro;11.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>HOODIES</strong>
-            </div>
-            <img src="images/hoodie.png">
-            <div>
-                <span>&euro;21.99</span>
-                <button role="button">ADD TO CART</button>
+
+            <div class="shop-item">
+                <span class="shop-item-title">HOODIES</span>
+                <img class="shop-item-image" src="images/hoodie.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">&euro;21.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            <strong>PRICE</strong>
-            <strong>QUANTITY</strong>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="images/cap.png" width="100" height="100">
-            <span>Cap</span>
-            <span>&euro;9.99</span>
-            <input type="number" value="1">
-            <button type="button">REMOVE</button>
+        
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/cap.png" width="100" height="100">
+                    <span class="cart-item-title">Cap</span>
+                </div>
+                <span class="cart-price cart-column">&euro;9.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/tshirt.png" width="100" height="100">
+                    <span class="cart-item-title">T-Shirt</span>
+                </div>
+                <span class="cart-price cart-column">&euro;11.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="images/tshirt.png" width="100" height="100">
-            <span>T-Shirt</span>
-            <span>&euro;11.99</span>
-            <input type="number" value="2">
-            <button type="button">REMOVE</button>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">&euro;33.97</span>
         </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>&euro;33.97</span>
-        </div>
-        <div>
-            <button type="button">PURCHASE</button>
-        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </section>
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.youtube.com/c/Team97/videos" target="_blank">
-                    <img src="images/youtube.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/_team97_/" target="_blank">
-                    <img src="images/instagram.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/97Team97" target="_blank">
-                    <img src="images/facebook.png">
-                </a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="team-name">TEAM97</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.facebook.com/97Team97" target="_blank">
+                        <img src="images/facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/Team97/videos" target="_blank">
+                        <img src="images/youtube.PNG">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
